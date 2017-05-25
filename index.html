@@ -1,0 +1,59 @@
+<head>
+    <meta charset="utf-8" />
+    <title>爱羽客新闻封面图生成器</title>
+    <style>
+        img {
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center; margin: 0 auto; position: relative;">
+        <h2>爱羽客新闻封面图生成器</h2>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <div>
+                    <canvas id="canvas"></canvas>
+                    <img src="" alt="" style="display:none;">
+                </div>
+                <p>
+                    <div>
+                        <input type="file" accept="image/gif, image/jpeg, image/png">
+                    </div>
+                    <div>
+                        <input type="text" id="input" placeholder="请输入文字">
+                    </div>
+                    <div>
+                        <label for="">字体大小px</label>
+                        <input type="text" id="font" placeholder="字体大小px" value="60">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="is-add-watermark" checked="checked"> 加水印
+                        <input type="checkbox" id="is-add-overlay" checked="checked"> 加遮罩
+                        <input type="checkbox" id="is-dark"> 深色遮罩
+                    </div>
+                    <div>
+                        <button id="down">遮罩下移</button>
+                        <button id="up">遮罩上移</button>
+                        <button id="download">下载JPEG</button>
+                        <button id="download-2">下载PNG</button>
+                    </div>
+                </p>
+            </div>
+            <div style="flex:1">
+
+                <div class="origin-img" style="position: relative;margin: 0 auto; display:none">
+                    <div style="position:relative;margin: 0 auto">
+                        <img src="" alt="" style="width: 600px;">
+                        <div class="cropper" style="position: absolute;top:0px;left:0px; background:rgba(0, 0, 0, 0.5); width: 1024px; height:651px;">
+                            <div class="selected" draggable="" style="position: absolute; top:0px;left:0px;width:600px;height:388px;border: 1px solid #fff;cursor:move;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
