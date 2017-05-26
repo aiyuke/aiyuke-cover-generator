@@ -10,7 +10,7 @@ class Draw {
     fontSize = 60
 
     selectedWidth = 0
-    curOffset = 180
+    curOffset = 185
     img = document.querySelector('img')
     originImg = document.querySelector('.origin-img img')
     input = document.querySelector('#input')
