@@ -215,7 +215,7 @@ var Draw = (function () {
         }
     };
     Draw.prototype.drawText = function () {
-        this.ctx.font = "bold " + this.fontSize + "px MicrosoftYaHei-Bold, PingFangSC-Semibold";
+        this.ctx.font = "bold " + this.fontSize + "px SourceHanSansSC-Bold MicrosoftYaHei-Bold, PingFangSC-Semibold";
         this.ctx.fillStyle = '#fafaf6';
         this.ctx.textAlign = "center";
         this.ctx.shadowOffsetX = 3;
